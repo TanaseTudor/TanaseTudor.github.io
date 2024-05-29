@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style6.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc</title>
+</head>
+<body>
+    <div class="top">
+        <h1>Ghiceste numarul!</h1>
+        <p>Introdu un nr. (intre 0-100):</p>
+        <input type="number" id="nr1">
+        <br><br>
+        <button onclick="ghici()">Verifica!</button>
+        <br><br>
+        <p>Rezultat:</p>
+        <h1 id="rez">Incepe jocul!</h1>
+    </div>
+</body>
+<script>
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+    let nde = getRandomInt(101);
+    function ghici(){
+        let n = Number(document.getElementById("nr1").value);
+        if (n > -1 && n < 101){
+            document.getElementById("rez").innerText = "...";
+            setTimeout(() => {
+                
+        if (n > nde){
+            document.getElementById("rez").innerText = "Numarul e mai mic!";
+        }
+        else if (n < nde){
+            document.getElementById("rez").innerText = "Numarul e mai mare!";
+        }
+        else if (n == nde){
+            document.getElementById("rez").innerText = "Ai ghicit nr.! (" + n.toString() + ")";
+            setTimeout(() => {
+                nde = getRandomInt(101);
+                document.getElementById("rez").innerText = "Jocul a reinceput! Numarul este altul!";
+            }, 4000);
+        }
+    }, 200);
+    }
+    else{
+        document.getElementById("rez").innerText = "Numarul e invalid!";
+    }
+}
+</script>
+
+</html>

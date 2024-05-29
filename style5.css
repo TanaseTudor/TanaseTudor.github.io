@@ -1,0 +1,29 @@
+.top {
+    padding:20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border : 2.5px;
+    border-style: solid;
+}
+
+button{
+    border-radius: 7px;
+    padding: 10px 30px;
+    transition-duration: 0.2s;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 6px;
+    display: inline-block;
+    position: relative;
+    background-color: rgb(217,217,217);
+    cursor:pointer;
+}   
+
+body{
+    font-family: "Montserrat", sans-serif;
+}

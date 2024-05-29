@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc</title>
+</head>
+<body>
+    <div class="top">
+        <h1>Adunator de numere</h1>
+        <p>Numarul 1:</p>
+        <input type="number" id="nr1">
+        <br><br>
+        <p>Numarul 2:</p>
+        <input type="number" id="nr2">
+        <br><br>
+        <button onclick="aduna()">Aduna numerele!</button>
+        <br><br>
+        <p>Rezultat:</p>
+        <h1 id="rez">Inca nu a fost calculat !</h1>
+    </div>
+</body>
+<script>
+    function aduna(){ // asa faci o functie
+        let n1 = Number(document.getElementById("nr1").value); // facem variabila n1 sa ii fie valoarea luata de la elementu cu id-u "nr1", adica caseta de la nr 1
+        let n2 = Number(document.getElementById("nr2").value);
+        let rezultat = n1 + n2 // adunam n1, n2 si punem in variabila rezultat
+        document.getElementById("rez").innerText = rezultat // Setam textul de la rezultat la elementul cu id rez (textul cu rezultatul)
+    }
+</script>
+
+</html>
