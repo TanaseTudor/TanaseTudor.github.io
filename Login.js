@@ -18,3 +18,26 @@ function LoginPage() {
         }
     }
 }
+
+function DespreMine() {
+    let name = document.getElementById("q").value;
+    let password = document.getElementById("w").value;
+
+    if(name == "tudor") {
+        if(password == "12") {
+            
+                location.href = "DespreMine2.html"
+            
+        }
+    }
+
+    if(name == "rares") {
+        if(password == "11") {
+            
+                location.href = "DespreMine2.html"
+            
+        }
+    }
+}
+
+ 

@@ -17,3 +17,7 @@ function Joc() {
 function Joc2() {
     location.href = "GhicesteNumarul.html"
 }
+
+function DespreMine() {
+    location.href = "DespreMine1.html"
+}
