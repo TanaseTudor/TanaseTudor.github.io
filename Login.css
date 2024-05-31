@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding: 0;
     background-size: cover;
     font-family: "Montserrat", sans-serif;
 }
@@ -33,9 +32,9 @@ button{
     position: relative;
     background-color: rgb(217,217,217);
     cursor:pointer;
-  }
+} 
 
-  .vid{
+.vid{
                 
     z-index: -1;
     position: fixed;
