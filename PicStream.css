@@ -1,0 +1,19 @@
+.top {
+    text-align: center;
+}
+
+body{
+    background-color: rgb(245, 232, 179);
+}
+.center {
+    text-align: center;
+}
+.right {
+    padding:20px;
+    position: absolute;
+    top: 30%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    border : 2.5px;
+    border-style: solid;
+}
