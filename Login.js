@@ -32,7 +32,7 @@ function DespreMine() {
     }
 
     if(name == "rares") {
-        if(password == "11") {
+        if(password == "12") {
             
                 location.href = "DespreMine2.html"
             
