@@ -21,3 +21,7 @@ function Joc2() {
 function DespreMine() {
     location.href = "DespreMine1.html"
 }
+
+function DespreLimitat() {
+    location.href = "DespreLimitat.html"
+}

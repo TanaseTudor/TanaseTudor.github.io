@@ -40,4 +40,6 @@ function DespreMine() {
     }
 }
 
- 
+function Limitat()  {
+    location.href = "limitat.html"
+}
